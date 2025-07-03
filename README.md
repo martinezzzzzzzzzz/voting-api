@@ -26,6 +26,14 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
+
+Fijarse en instalar dentro del entorno virtual y dentro de app/. Si no, instalar las dependencias ejecuntando:
+
+```bash
+pip install fastapi uvicorn SQLAlchemy pydantic pymysql
+
+```
+
 ## 4. Crear la base de datos
 En la carpeta database/ encontrarás el archivo schema.sql para crear la base de datos y tablas necesarias.
 Ejecuta el script en tu servidor MySQL:
@@ -155,6 +163,10 @@ Swagger UI
 ![Estadisticas de votos](assets\statics_swagger.png)
 Esta es una vista de las estadisticas generadas despues de 3 votantes. Solo se ve 1 voto reflejado en los candidatos por que los otos 2 fueron de prueba y no contaon los votos a los candidatos.
 
+# 📋 Documentación
+
+En app/assets/doc, se encuenta un archivo README con la documentación general del api (Swagger).
+
 # 📂 Estructura del proyecto
 
 ```pgsql
@@ -167,10 +179,13 @@ Esta es una vista de las estadisticas generadas despues de 3 votantes. Solo se v
 │   ├── schemas.py
 │   ├── auth/
 │   └── database.py
-├── sql/
+├── database/
 │   └── schema.sql
-├── images/
+├── assets/
+│     ├── doc/
+│     └── README.md
 │   ├── statics_swagger.png
+│   ├── swagger.png
 ├── requirements.txt
 └── README.md
 ```
