@@ -152,7 +152,7 @@ Ejemplo de lo que devuelve el endpoint /votes/statistics:
 
 Swagger UI 
 
-![Estidisticas de votos](images\statics.png)
+![Estadisticas de votos](assets\statics_swagger.png)
 Esta es una vista de las estadisticas generadas despues de 3 votantes. Solo se ve 1 voto reflejado en los candidatos por que los otos 2 fueron de prueba y no contaon los votos a los candidatos.
 
 # 📂 Estructura del proyecto
@@ -160,6 +160,7 @@ Esta es una vista de las estadisticas generadas despues de 3 votantes. Solo se v
 ```pgsql
 |voting-api/
 ├── app/
+│   ├── __init__.py
 │   ├── main.py
 │   ├── routers/
 │   ├── models.py
@@ -168,9 +169,8 @@ Esta es una vista de las estadisticas generadas despues de 3 votantes. Solo se v
 │   └── database.py
 ├── sql/
 │   └── schema.sql
-├── docs/
-│   ├── swagger_ui.png
-│   └── postman_stats.png
+├── images/
+│   ├── statics_swagger.png
 ├── requirements.txt
 └── README.md
 ```
