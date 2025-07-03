@@ -15,7 +15,6 @@ class VoterResponse(BaseModel):
     class Config:
         from_attributes = True
 
-# Alias para evitar errores en imports que usan VoterOut
 VoterOut = VoterResponse
 
 class CandidateCreate(BaseModel):
@@ -43,13 +42,10 @@ class VoteResponse(BaseModel):
     class Config:
         from_attributes = True
         
-        
-        # Esquema para crear candidato
 class CandidateCreate(BaseModel):
     name: str
     party: Optional[str] = None
 
-# Esquema para leer candidato (response_model)
 class Candidate(BaseModel):
     id: int
     name: str
