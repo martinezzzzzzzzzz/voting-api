@@ -152,7 +152,7 @@ Ejemplo de lo que devuelve el endpoint /votes/statistics:
 
 Swagger UI 
 
-![Estidisticas de votos](voting-api\images\statics.png)
+![Estidisticas de votos](images\statics.png)
 Esta es una vista de las estidisticas egenades despues de 3 votantes. Solo se ve 1 voto reflejado en los candidatos por que los otos 2 fueron de prueba y no contaon los votos a los candidatos.
 
 # 📂 Estructura del proyecto
